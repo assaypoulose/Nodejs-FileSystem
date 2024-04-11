@@ -39,6 +39,10 @@ app.get('/files', (req, res) => {
     });
 });
 
+app.get('/',(req, res)=>{
+    res.status(200).send('Welcome to my Node File System')
+})
+
 app.listen(PORT, () => {
     console.log(`App is running on PORT ${PORT}`);
 });
